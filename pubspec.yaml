@@ -1,0 +1,64 @@
+name: propcare_track
+description: "PropCare Track — field employee live location, attendance & site visit tracking."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5+1
+  sqflite: ^2.4.2
+  sqflite_common_ffi: ^2.3.7+1
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.5
+  geolocator: ^14.0.2
+  battery_plus: ^7.1.2
+  intl: ^0.20.3
+  uuid: ^4.6.0
+  crypto: ^3.0.8
+  permission_handler: ^12.0.1
+  google_maps_flutter: ^2.14.2
+  geocoding: ^5.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/branding/
+    - assets/sites/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/branding/app_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#080D1C"
+  adaptive_icon_foreground: "assets/branding/app_icon_foreground.png"
+  min_sdk_android: 23
